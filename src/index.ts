@@ -10,7 +10,8 @@ const modulePath = `./${date}/index.ts`;
 
 async function importModule(input) {
   const {solve} = await import(modulePath);
-  solve(input);
+  const result = solve(input);
+  console.log(`Result : ${result}`);
   console.log(`Day : ${date}`)
 }
 
