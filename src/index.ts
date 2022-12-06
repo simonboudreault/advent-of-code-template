@@ -6,7 +6,7 @@ const input = fs.readFileSync(`./src/${date}/input.txt`, 'utf8');
 
 const split = input.split('\r\n');
 
-const modulePath = `./${date}/index.ts`;
+const modulePath = `./${date}/solve.ts`;
 
 async function importModule(input) {
   const {solve} = await import(modulePath);
